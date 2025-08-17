@@ -1,0 +1,18 @@
+load_library scl05u
+set_working_dir "F:/Questa_lab/final project/Phase 3"
+read -technology "scl05u" { 
+    "F:/Questa_lab/final project/Phase 3/one_wire_tx.v"
+    "F:/Questa_lab/final project/Phase 3/one_wire_rx.v"
+    "F:/Questa_lab/final project/Phase 3/one_wire_top.v"
+}
+set register2register 16.666667
+set input2register 16.666667
+set register2output 16.666667
+optimize .work.one_wire_top.INTERFACE -target scl05u -macro -area -effort quick -hierarchy auto 
+optimize_timing .work.one_wire_top.INTERFACE 
+report_area -cell_usage -hierarchy -all_leafs 
+set novendor_constraint_file FALSE
+auto_write one_wire_rx_0.v
+view_schematic -rtl -view
+view_schematic -rtl -view
+view_schematic -rtl -view

@@ -1,0 +1,284 @@
+LeonardoSpectrum Level 3 - 2020a.2 (Release Production Release, compiled Apr 27 2020 at 09:07:52)
+Copyright Siemens 1990-2020.  All rights reserved.
+Portions copyright 1991-2020 Compuware Corporation
+
+Session history will be logged to file 'C:/MGC/LeoSpec/LS2020a_2/demo/leospec.his'
+--
+-- Welcome to LeonardoSpectrum Level 3
+-- Run By LAB350-PC02@DESKTOP-2OQVEUF
+-- Run Started On Sat Aug 16 12:42:17 Egypt Daylight Time 2025
+--
+Reading library file `C:\MGC\LeoSpec\LS2020a_2\\lib\scl05u.syn`...
+Library version = Sample
+Delays assume: Process=typical Temp= 25.0 C  Voltage=3.30 V  
+Info: setting encoding to auto
+-- Reading module generator description from file C:/MGC/LeoSpec/LS2020a_2//data/modgen/scl05u.vhd
+-- Reading vhdl file C:/MGC/LeoSpec/LS2020a_2//data/modgen/scl05u.vhd into library OPERATORS
+-- Loading modgen ASIC architectures...
+-- Reading vhdl file C:\MGC\LeoSpec\LS2020a_2\\data\modgen\asic.vhd into library OPERATORS
+--
+-- ASIC MODGEN Architecture Generator Version 4.4
+--
+Info, Working Directory is now 'F:/Questa_lab/final project/Phase 3'
+Info, History file moved to new working directory
+Info, Log file moved to new working directory
+-- Reading file 'F:/Questa_lab/final project/Phase 3/one_wire_tx.v'...
+-- Reading file 'F:/Questa_lab/final project/Phase 3/one_wire_rx.v'...
+-- Reading file 'F:/Questa_lab/final project/Phase 3/one_wire_top.v'...
+-- Loading module 'one_wire_tx'
+-- Loading module 'one_wire_rx'
+-- Loading module 'one_wire_top'
+-- Compiling root module 'one_wire_top'
+-- Compiling module one_wire_tx
+"F:/Questa_lab/final project/Phase 3/one_wire_tx.v",line 100: Info, case choices are mutually exclusive; inferring parallel case.
+-- Compiling module one_wire_rx
+"F:/Questa_lab/final project/Phase 3/one_wire_top.v",line 26: Warning, Multiple drivers on one_wire_data : also line 34.
+Info: setting register2register to 16.666667
+Info: setting input2register to 16.666667
+Info: setting register2output to 16.666667
+"F:/Questa_lab/final project/Phase 3/one_wire_tx.v", line 78:Info, Inferred counter instance 'cnt' of type 'counter_up_sclear_aclear_clock_32'
+"F:/Questa_lab/final project/Phase 3/one_wire_tx.v", line 88:Info, Inferred counter instance 'bit_idx' of type 'counter_up_sclear_aclear_clock_clk_en_3'
+
+Info, Merging parallel DFF, drive_low and presence_detect."F:/Questa_lab/final project/Phase 3/one_wire_rx.v", line 122:Info, Inferred counter instance 'pres_cnt' of type 'counter_up_sclear_aclear_clock_clk_en_32'
+"F:/Questa_lab/final project/Phase 3/one_wire_rx.v", line 157:Info, Inferred counter instance 'bit_idx' of type 'counter_up_sclear_aclear_clock_clk_en_3'
+"F:/Questa_lab/final project/Phase 3/one_wire_rx.v", line 162:Info, Inferred counter instance 'sample_cnt' of type 'counter_up_sclear_aclear_clock_clk_en_32'
+Using default wire table: SCL_CORE_4K
+-- Resolving function inc with module generator modgen_INC_32_small_false  from file asic.vhd
+# ** note : Building Ripple INC
+-- Resolving function inc with module generator modgen_INC_3_small_false  from file asic.vhd
+-- Info, replacing modgen_INC(eXemplar)
+-- Optimizing netlist .work.one_wire_tx.INTERFACE
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+Re-checking DRC after adjustments
+-- Resolving function inc with module generator modgen_INC_32_small_false  from file asic.vhd
+-- Info, replacing modgen_INC(eXemplar)
+-- Optimizing netlist .work.one_wire_rx.INTERFACE
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+Re-checking DRC after adjustments
+-- Optimizing netlist .work.one_wire_top.INTERFACE
+-- Matching combinational logic..
+-- Matching non-combinational logic..
+-- Covering..
+-- CPU Time used :   00:00 Mapping
+-- Final Design Rule Check..
+Re-checking DRC after adjustments
+-- Start timing optimization for design .work.one_wire_tx.INTERFACE
+Starting Timing Characterization...
+Starting Timing Analysis...
+Using default wire table: SCL_CORE_4K
+Timing analysis done, time = 0 CPU secs.
+Timing characterization done, time = 0 CPU secs.
+
+*******************************************************
+
+Cell: one_wire_rx    View: INTERFACE    Library: work
+
+*******************************************************
+
+
+ Cell     Library  References     Total Area
+
+AN1V1     scl05u     2 x      5     10 gates
+AN2T0     scl05u    63 x      5    296 gates
+AN3T0     scl05u     2 x      6     12 gates
+AN4T0     scl05u     2 x      8     16 gates
+AO1A0     scl05u     1 x      6      6 gates
+AO2L0     scl05u     1 x      8      8 gates
+AO3I0     scl05u     2 x      8     15 gates
+AOA4I0    scl05u     2 x      8     15 gates
+CONZ0     scl05u     1 x      1      1 CONZ0
+FD1B0     scl05u     1 x      9      9 gates
+FD1C0     scl05u     2 x      9     17 gates
+FD1C2     scl05u     1 x     10     10 gates
+FD1I0     scl05u    86 x     11    912 gates
+HA1A0     scl05u    60 x      7    396 gates
+IV1N0     scl05u    15 x      3     47 gates
+IV1NP     scl05u     1 x      4      4 gates
+MX2L0     scl05u     7 x      6     43 gates
+MX2T0     scl05u     1 x      6      6 gates
+MX2T2     scl05u     1 x      7      7 gates
+ND2N0     scl05u     5 x      5     23 gates
+NR2R0     scl05u    14 x      5     63 gates
+NR2R1     scl05u     1 x      5      5 gates
+NR2V1     scl05u     1 x      6      6 gates
+NR3R0     scl05u     1 x      6      6 gates
+NR3R2     scl05u     1 x      7      7 gates
+NR4R1     scl05u     1 x      8      8 gates
+OA1R0     scl05u     3 x      6     19 gates
+OAI3R0    scl05u     1 x      8      8 gates
+OAOI1     scl05u     1 x      8      8 gates
+OR2T0     scl05u     2 x      5      9 gates
+OR3T0     scl05u     4 x      6     25 gates
+OR5T0     scl05u     1 x      9      9 gates
+OR6T0     scl05u     3 x     11     33 gates
+OR8T0     scl05u     2 x     14     28 gates
+TS1R1     scl05u     1 x      5      5 gates
+XN2R0     scl05u     3 x      5     15 gates
+
+ Number of ports :                      14
+ Number of nets :                      366
+ Number of instances :                 296
+ Number of references to this view :     1
+
+Total accumulated area : 
+ Number of CONZ0 :                       1
+ Number of gates :                    2104
+ Number of accumulated instances :     296
+
+*******************************************************
+
+Cell: one_wire_tx    View: INTERFACE    Library: work
+
+*******************************************************
+
+
+ Cell     Library  References     Total Area
+
+AN2T0     scl05u    35 x      5    165 gates
+AN3T0     scl05u     4 x      6     25 gates
+AN6T0     scl05u     1 x     11     11 gates
+AO1A0     scl05u     1 x      6      6 gates
+AO1I0     scl05u     2 x      6     12 gates
+AO2A0     scl05u     1 x      8      8 gates
+AO2I0     scl05u     2 x      8     15 gates
+AO2I1     scl05u     1 x      8      8 gates
+AO2L0     scl05u     2 x      8     15 gates
+AO2L1     scl05u     1 x      8      8 gates
+AO2L2     scl05u     1 x      8      8 gates
+AO3I0     scl05u     5 x      8     38 gates
+AO6I0     scl05u     1 x     11     11 gates
+AOA4I0    scl05u     6 x      8     46 gates
+AOA4I1    scl05u     1 x      8      8 gates
+CONZ0     scl05u     1 x      1      1 CONZ0
+FD1B0     scl05u    34 x      9    292 gates
+FD1B1     scl05u     3 x      9     26 gates
+FD1I0     scl05u     4 x     11     42 gates
+HA1A0     scl05u    30 x      7    198 gates
+IV1N0     scl05u    16 x      3     50 gates
+IV1N2     scl05u     1 x      3      3 gates
+MX2L0     scl05u     2 x      6     12 gates
+ND2N0     scl05u     1 x      5      5 gates
+ND3N0     scl05u     4 x      6     25 gates
+ND4N0     scl05u     2 x      8     15 gates
+NR2R0     scl05u    13 x      5     59 gates
+NR4R0     scl05u     2 x      8     15 gates
+NR4R1     scl05u     1 x      8      8 gates
+NR8R0     scl05u     1 x     14     14 gates
+OAI1A0    scl05u     1 x      6      6 gates
+OAI3N0    scl05u     2 x      8     15 gates
+OAI3N1    scl05u     1 x      8      8 gates
+OAI3R0    scl05u     2 x      8     15 gates
+OAI3R2    scl05u     1 x      8      8 gates
+OAOI0     scl05u     1 x      8      8 gates
+OR2T0     scl05u     6 x      5     28 gates
+OR4T0     scl05u     1 x      8      8 gates
+OR8T0     scl05u     2 x     14     28 gates
+TS1R1     scl05u     1 x      5      5 gates
+XN2R0     scl05u     4 x      5     20 gates
+XR2T0     scl05u     3 x      5     15 gates
+
+ Number of ports :                      14
+ Number of nets :                      261
+ Number of instances :                 204
+ Number of references to this view :     1
+
+Total accumulated area : 
+ Number of CONZ0 :                       1
+ Number of gates :                    1313
+ Number of accumulated instances :     204
+
+*******************************************************
+
+Cell: one_wire_top    View: INTERFACE    Library: work
+
+*******************************************************
+
+
+ Cell          Library  References     Total Area
+
+CONZ1          scl05u     1 x      1      1 CONZ1
+one_wire_rx    work       1 x      1      1 CONZ0
+                                2104   2104 gates
+one_wire_tx    work       1 x      1      1 CONZ0
+                                1313   1313 gates
+
+ Number of ports :                      21
+ Number of nets :                       23
+ Number of instances :                   3
+ Number of references to this view :     0
+
+Total accumulated area : 
+ Number of CONZ0 :                       2
+ Number of CONZ1 :                       1
+ Number of gates :                    3416
+ Number of accumulated instances :     501
+Info: setting novendor_constraint_file to FALSE
+AutoWrite args are : one_wire_rx_0.v
+-- Writing file one_wire_rx_0.v
+Using default wire table: SCL_CORE_4K
+
+
+
+                        Critical Path Report
+
+
+Critical path #1, (path slack =  1.8):
+
+NAME                                                  GATE              ARRIVAL              LOAD
+-------------------------------------------------------------------------------------------------
+clock information not specified
+delay thru clock network                                                0.00 (ideal)
+
+
+rx_inst/reg_sample_cnt(0)/Q                           FD1I0       0.00  0.56 up             0.22
+rx_inst/sample_cnt_ix133_D0_I0_dup_1523/CO            HA1A0       0.49  1.05 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1524/CO            HA1A0       0.43  1.48 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1525/CO            HA1A0       0.43  1.90 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1526/CO            HA1A0       0.43  2.33 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1527/CO            HA1A0       0.43  2.76 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1528/CO            HA1A0       0.43  3.19 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1529/CO            HA1A0       0.43  3.61 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1530/CO            HA1A0       0.43  4.04 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1531/CO            HA1A0       0.43  4.47 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1532/CO            HA1A0       0.43  4.90 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1533/CO            HA1A0       0.43  5.32 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1534/CO            HA1A0       0.43  5.75 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1535/CO            HA1A0       0.43  6.18 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1536/CO            HA1A0       0.43  6.61 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1537/CO            HA1A0       0.43  7.03 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1538/CO            HA1A0       0.43  7.46 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1539/CO            HA1A0       0.43  7.89 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1540/CO            HA1A0       0.43  8.32 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1541/CO            HA1A0       0.43  8.75 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1542/CO            HA1A0       0.43  9.17 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1543/CO            HA1A0       0.43  9.60 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1544/CO            HA1A0       0.43  10.03 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1545/CO            HA1A0       0.43  10.46 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1546/CO            HA1A0       0.43  10.88 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1547/CO            HA1A0       0.43  11.31 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1548/CO            HA1A0       0.43  11.74 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1549/CO            HA1A0       0.43  12.17 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1550/CO            HA1A0       0.43  12.59 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1551/CO            HA1A0       0.43  13.02 up             0.17
+rx_inst/sample_cnt_ix133_D0_I0_dup_1552/CO            HA1A0       0.41  13.43 up             0.14
+rx_inst/ix6413/X                                      XN2R0       0.36  13.92 dn             0.06
+rx_inst/ix421/X                                       NR2R0       0.23  14.15 up             0.06
+rx_inst/reg_sample_cnt(31)/D                          FD1I0       0.00  14.15 up             0.00
+data arrival time                                                       14.15
+
+
+data required time  (default specified - setup time)                     15.97
+-------------------------------------------------------------------------------------------------
+data required time                                                      15.97
+data arrival time                                                       14.15
+                                                                     ----------
+slack                                                                  1.82
+-------------------------------------------------------------------------------------------------
+
+
